@@ -1,4 +1,4 @@
-<h1>Binary trees</h2>
+<h1>Binary Trees</h2>
 <p>Group project on Algorithm and Data structure</p>
 <h3>Learning Objectives of this Project</h3>
 <ul>
