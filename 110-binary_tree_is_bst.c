@@ -14,7 +14,7 @@ int binary_tree_is_bst(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 
-	return (is_bst_valid(tree, INT_SMALL, INT_BIG));
+	return (is_bst_valid(tree, INT_MIN, INT_MAX));
 }
 
 /**
@@ -35,7 +35,7 @@ int is_bst_valid(const binary_tree_t *tree, int small, int big)
 			return (0);
 
 		return (is_bst_valid(tree->left, small, tree->n - 1) &&
-			is_bst_helper(tree->right, tree->n + 1, big));
+			is_bst_valid(tree->right, tree->n + 1, big));
 	}
 	return (1);
 }
